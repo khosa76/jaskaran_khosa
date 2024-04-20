@@ -34,8 +34,9 @@ nav{
   font-family: 'Ubuntu', sans-serif;
 }
 nav.sticky{
-  background: #4070f4;
+  background: rgb(242, 239, 229);
   padding: 13px 0;
+ 
 }
 nav .navbar{
   width: 90%;
@@ -50,7 +51,8 @@ nav .navbar .logo a{
   color: #4070f4;
 }
 nav.sticky .navbar .logo a{
-  color: #fff;
+   /* color: #0E2431; */
+   color: #0E2431;
 }
 nav .navbar .menu{
   display: flex;
@@ -71,7 +73,8 @@ nav .navbar .menu li{
   color: #4070f4;
 }
 nav.sticky .menu a{
-  color: #FFF;
+  /* color: #FFF; */
+  color: #0E2431;
 }
 nav.sticky .menu a:hover{
   color: #0E2431;
@@ -82,7 +85,8 @@ nav.sticky .menu a:hover{
   margin: 0 6px;
 }
 nav.sticky .media-icons a{
-  color: #FFF;
+  /* color: #FFF; */
+  color: #0E2431;
 }
 
 /* Side Navigation Menu Button CSS */
@@ -102,6 +106,7 @@ nav .menu-btn{
 }
 nav.sticky .menu-btn{
   color: #FFF;
+  
 }
 .navbar .menu .menu-btn{
   color: #fff;
@@ -114,7 +119,7 @@ nav.sticky .menu-btn{
   background: url("images/about12.png") no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   font-family: 'Ubuntu', sans-serif;
   
 }
@@ -172,10 +177,14 @@ nav.sticky .menu-btn{
  I'm Selecting Directly 'Section Tag' and 'Class'  */
 section{
   padding-top: 40px;
+  background-color: rgb(246,245,242);
+  margin: 0px;
 }
 section .content{
   width: 80%;
   margin: 40px auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-family: 'Poppins', sans-serif;
 }
 .about .about-details{
@@ -213,6 +222,7 @@ section .title span::after{
 }
 .about .about-details .left{
   width: 45%;
+  
 }
 .about .left img{
   height: 400px;
@@ -267,8 +277,14 @@ section .button button:hover{
 
  /* My Skills CSS */
  .skills{
-   background: #F0F8FF;
+   background: rgb(246,245,242);
  }
+
+ .about{
+  background: rgb(246,245,242);
+}
+
+
  .skills .content{
    padding: 40px 0;
  }
@@ -285,6 +301,7 @@ section .button button:hover{
    text-align: justify;
  }
 .skills .skills-details .experience{
+  background-color: rgb(246,245,242);
   display: flex;
   align-items: center;
   margin: 0 10px;
@@ -324,6 +341,7 @@ section .button button:hover{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  /* background-color: rgb(246,245,242); */
 }
 .services .boxes .box{
   margin: 20px 0;
@@ -366,7 +384,9 @@ section .button button:hover{
 }
 /* Contact Me CSS */
 .contact{
-  background: #F0F8FF;
+  background: rgb(246,245,242);
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 .contact .content{
   margin: 0 auto;
@@ -380,7 +400,8 @@ section .button button:hover{
 
 /* Footer CSS */
 footer{
-  background: #4070f4;
+  /* background: #4070f4; */
+  background: rgb(242, 239, 229);
   padding: 15px 0;
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -388,11 +409,11 @@ footer{
 footer .text span{
   font-size: 17px;
   font-weight: 400;
-  color: #fff;
+  color: black;
 }
 footer .text span a{
   font-weight: 500;
-  color: #FFF;
+  color: black;
 }
 footer .text span a:hover{
   text-decoration: underline;
@@ -500,8 +521,9 @@ footer .text span a:hover{
     width: 100%;
   }
   .services .boxes .box{
-    margin: 20px 0;
+    margin: 0px 0;
     width: 100%;
+
   }
   .contact .text{
     width: 100%;
