@@ -114,7 +114,7 @@ nav.sticky .menu-btn{
   background: url("images/about12.png") no-repeat;
   background-size: cover;
   background-position: center;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
   
 }
