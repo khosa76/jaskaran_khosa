@@ -1,0 +1,113 @@
+
+
+* {
+  margin: 0px;
+
+  padding: 0px;
+  font-family: "Finger Paint";
+  justify-content: center;
+}
+
+body {
+  background-color: rgb(249, 205, 249);
+  text-align: center;
+}
+
+td {
+  border: 2px solid #333;
+  height: 20vmin;
+  width: 30vmin;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Finger Paint", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 70px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: transparent; /* Make the default text color transparent */
+}
+
+/* Change the color of X */
+td:not(:empty):not(:contains("O"))::before {
+  content: "X";
+  color: blue;
+}
+
+/* Change the color of O */
+td:contains("O")::before {
+  content: "O";
+  color: black;
+}
+
+
+
+table {
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  border-style: solid;
+  border-color: #333;
+  box-shadow: 4px 4px;
+  font-family: "Finger Paint";
+  
+}
+
+table tr:first-child td {
+  border-top: 0;
+}
+
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+table tr td:first-child {
+  border-left: 0;
+}
+
+table tr td:last-child {
+  border-right: 0;
+}
+
+.endgame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2em;
+}
+
+.endgame button {
+  font-size: 3vmin;
+  margin-top: 3vmin;
+  font-style: italic;
+  background-color: rgb(174, 156, 168);
+  padding: 1vmin;
+  border-radius: 15px;
+}
+
+#khosa1 {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-style: italic;
+  color: rgb(127, 75, 138);
+  font-family: "Finger Paint";
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#khosa3 {
+  font-style: normal;
+  font-family: "Finger Paint";
+}
+
+#khosa {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
