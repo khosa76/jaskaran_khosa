@@ -1,0 +1,4 @@
+[build]
+  base = "crypto-tracker"
+  publish = "crypto-tracker/build"
+  command = "npm run build"
