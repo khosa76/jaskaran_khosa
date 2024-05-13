@@ -4,7 +4,11 @@
   <head>
     <meta charset="UTF-8" />
     <title>Jaskaran Khosa</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="portfoliostyle.css" />
+    <link rel="stylesheet" href="portfoliostyle1.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="all.css" />
+    <script src="https://kit.fontawesome.com/d05e321527.js" crossorigin="anonymous"></script>
     <!-- Fontawesome CDN Link -->
     <link
       rel="stylesheet"
@@ -14,38 +18,72 @@
   </head>
   <body>
     <!-- Move to up button -->
-    <div class="scroll-button">
-      <a href="#home"><i class="fas fa-arrow-up"></i></a>
-    </div>
+    
     <!-- navgaition menu -->
     <nav>
       <div class="navbar">
         <div class="logo"><a href="#">Portfolio.</a></div>
         <ul class="menu">
           <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#about1">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#projects1">Projects</a></li>
+          <li><a href="#contact1">Contact</a></li>
           <div class="cancel-btn">
             <i class="fas fa-times"></i>
           </div>
         </ul>
         <div class="media-icons">
           <a href="https://www.facebook.com/jaskarn.khosa6"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
+            >
+            <i class="fab fa-facebook-f"></i>
+
+            <!-- <div class="fab details-container-header">
+              <img
+                src="./assets/facebook.png"
+                alt="facebook icon"
+                class="fab iconheader"
+              /> -->
+
+
+          </a>
+
+
+
+
+
+            
           <a href="https://www.linkedin.com/in/jaskaran-khosa/"
             ><i class="fab fa-linkedin"></i
           ></a>
-          <a href="https://www.instagram.com/jaskaran_khosa_"
-            ><i class="fab fa-instagram"></i
-          ></a>
+
+
+          <a href="https://www.linkedin.com/in/jaskaran-khosa/">
+
+            <!-- <div class="fab details-container-header">
+              <img
+                src="./assets/linkedin.png"
+                alt="linkedin icon"
+                class="fab iconheader"
+              /> -->
+
+          </a>
+
+
+          <a href="https://www.instagram.com/jaskaran_khosa_">
+            <i class="fab fa-instagram"></i>
+            <!-- <div class="fab details-container-header">
+              <img
+                src="./assets/instagram.png"
+                alt="instagram icon"
+                class="fab iconheader"
+              /> -->
+          </a>
         </div>
       </div>
       <div class="menu-btn">
-        <i class="fas fa-bars"></i>
+        <i class="fa-solid fa-bars"></i>
       </div>
     </nav>
 
@@ -77,32 +115,59 @@
 
 
 
-    <!-- About Section Start -->
-    <section class="about" id="about">
-      <div class="content">
-        <div class="title"><span>About Me</span></div>
-        <div class="about-details">
-          <div class="left">
-            <img src="images/about4.png" alt="" />
-          </div>
-          <div class="right">
-            <div class="topic">
-              Meet Jaskaran Singh Khosa: Web Developer
-            </div>
-            <p>
-              Hello, I'm Jaskaran Singh Khosa, a passionate web developer with a
+
+<!-- Second type of About section test -->
+
+<section id="about1" class="section76 about">
+  <p class="section__text__p1 content">Get To Know More</p>
+  <h1 class="title1"><span>About Me</span></h1>
+  <div class="section-container1 about-details">
+    <div class="section__pic-container1 left">
+      <img
+        src="./images/about3.png"
+        alt="Profile picture"
+        class="about-pic1"
+      />
+    </div>
+    <div class="about-details-container1 right">
+      <div class="about-containers1">
+        <div class="details-container1">
+          <img
+            src="./assets/experience.png"
+            alt="Experience icon"
+            class="icon1"
+          />
+          <h3>Experience</h3>
+          <p>10+ Projects <br />Fullstack Development</p>
+        </div>
+        <div class="details-container1">
+          <img
+            src="./assets/education.png"
+            alt="Education icon"
+            class="icon1"
+          />
+          <h3>Education</h3>
+          <p>M.C.A Bachelors Degree<br />M.B.A Masters Degree</p>
+        </div>
+      </div>
+      <div class="text-container1">
+        <p>
+          Hello, I'm Jaskaran Singh Khosa, a passionate web developer with a
               focus on building innovative and user-friendly web applications. I
               completed my Bachelor's in Computer Applications (BCA) from
               Chandigarh University and I'm currently pursuing my MBA from the
               same institution.
-            </p>
-            <!-- <div class="button">
-              <button>Download CV</button>
-            </div> -->
-          </div>
-        </div>
+        </p>
       </div>
-    </section>
+    </div>
+  </div>
+  
+</section>
+
+<!-- Second type of About section test ends here -->
+
+
+
 
     <section class="services" id="skills">
       <div class="content">
@@ -175,178 +240,149 @@
       </div>
     </section>
 
-    <section class="skills" id="projects">
-      <div class="content">
-        <div class="title"><span>My Projects</span></div>
 
-        <div class="text">
-          <div class="topic1">
-            <div class="experience">
-              <h3>Spotify Clone, Mohali</h3>
-              <h6>December 2022</h6>
-              <ul>
-                <li>
-                  Developed a React-based web application replicating Spotify's
-                  user interface and functionality.
-                </li>
-                <li>
-                  Implemented user authentication and authorization using
-                  Firebase Authentication for secure access control.
-                </li>
-                <li>
-                  Created dynamic playlist management, allowing users to create,
-                  edit, and delete playlists in real-time using Firebase
-                  Realtime Database.
-                </li>
-                <li>
-                  Integrated the Spotify Web API to fetch and play music tracks
-                  directly within the application.
-                </li>
-                <li>
-                  Utilized React Router for navigation and state management with
-                  Redux for efficient data flow.
-                </li>
-              </ul>
+
+
+<!-- My Projects secrtion start here text-->
+ <div class="bctry" id="projects1">
+<section1 id="projects1 about1" class="section76 about content services">
+ 
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title1">Projects</h1>
+      <div class="experience-details-container1 about-details">
+        <div class="about-containers1">
+          <div class="details-container1 color-container1">
+            <div class="article-container1">
+              <img
+                src="./assets/project14.png"
+                alt="Project 1"
+                class="project-img1"
+              />
             </div>
-            <br /><br />
-
-            <div class="experience">
-              <h3>Netflix Clone, Mohali</h3>
-              <h6>May 2023</h6>
-              <ul>
-                <li>
-                  Built a Netflix-inspired streaming platform using React for
-                  the frontend.
-                </li>
-                <li>
-                  Implemented user authentication with Firebase Authentication
-                  for secure user access.
-                </li>
-                <li>
-                  Developed a dynamic movie and TV show browsing feature with
-                  Axios to fetch data from TMDB API.
-                </li>
-                <li>
-                  Created a watchlist feature allowing users to add and remove
-                  titles from their watchlist, with data stored in Firebase
-                  Firestore.
-                </li>
-                <li>
-                  Integrated video streaming using the React Video library for
-                  smooth playback.
-                </li>
-              </ul>
+            <h2 class="experience-sub-title1 project-title1">Crypto tracker</h2>
+            <div class="btn-container1">
+              <button
+                class="btn1 btn-color-2 project-btn1"
+                onclick="location.href='https://github.com/khosa76/crypto-tracker'"
+              >
+                Github
+              </button>
+              <button
+                class="btn1 btn-color-2 project-btn1"
+                onclick="location.href='https://jaskaran-khosa.netlify.app/crypto-tracker'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container1 color-container1">
+            <div class="article-container1">
+              <img
+                src="./assets/project15.png"
+                alt="Project 2"
+                class="project-img1"
+              />
+            </div>
+            <h2 class="experience-sub-title1 project-title1">Spotify using React</h2>
+            <div class="btn-container1">
+              <button
+                class="btn1 btn-color-2 project-btn1"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn1 btn-color-2 project-btn1"
+                onclick="location.href='https://open.spotify.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container1 color-container1">
+            <div class="article-container1">
+              <img
+                src="./assets/project16.png"
+                alt="Project 3"
+                class="project-img1"
+              />
+            </div>
+            <h2 class="experience-sub-title1 project-title1">AI-TicTacToe</h2>
+            <div class="btn-container1">
+              <button
+                class="btn1 btn-color-2 project-btn1"
+                onclick="location.href='https://github.com/khosa76/Tic-Tac-Toe'"
+              >
+                Github
+              </button>
+              <button
+                class="btn1 btn-color-2 project-btn1"
+                onclick="location.href='https://jaskaran-khosa.netlify.app/tictactoe'"
+              >
+                Live Demo
+              </button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+    
+    </div>
+    </section1>
+  </div>
 
-    <!-- My Services Section Start -->
-    <section class="services" id="services">
-      <div class="content">
-        <div class="title"><span>My Services</span></div>
-        <div class="boxes">
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-desktop"></i>
-            </div>
-            <div class="topic">Web Devlopment</div>
-            <p>
-              Building custom websites and web applications tailored to your
-              needs.
-            </p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-paint-brush"></i>
-            </div>
-            <div class="topic">Frontend Development</div>
-            <p>
-              Creating intuitive and responsive user interfaces using modern
-              technologies like React.js.
-            </p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-chart-line"></i>
-            </div>
-            <div class="topic">Backend Development</div>
-            <p>
-              Developing robust server-side applications using Node.js and
-              MongoDB.
-            </p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fab fa-android"></i>
-            </div>
-            <div class="topic">Security Consulting</div>
-            <p>
-              Providing advice and solutions to enhance the security of your web
-              applications.
-            </p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-camera-retro"></i>
-            </div>
-            <div class="topic">Cloud Computing</div>
-            <p>
-              Utilizing cloud platforms like AWS, Azure, or Google Cloud to
-              deploy scalable and reliable web applications.
-            </p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-tablet-alt"></i>
-            </div>
-            <div class="topic">WordPress Development</div>
-            <p>
-              Designing and customizing WordPress websites, themes, and plugins
-              to meet your specific requirements.
-            </p>
-          </div>
+<!-- My Projects secrtion end here text-->
+
+
+    <!-- Footer Section Test start -->
+
+
+    <section id="contact1" class="section77">
+      <p1 class="section__text__p1">Get in Touch</p1>
+      <h1 class="title1">Contact Me</h1>
+      <div class="contact-info-upper-container1">
+        <div class="contact-info-container1">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon1 contact-icon1 email-icon1"
+          />
+          <p1><a href="mailto:jaskarnkhosa6@gmail.com">Mail&nbsp; &nbsp;</a></p1>
         </div>
-      </div>
-    </section>
-
-    <!-- Contact Me section Start -->
-    <section class="contact" id="contact">
-      <div class="content">
-        <div class="title"><span>Contact Me</span></div>
-        <div class="text">
-          <div class="topic">
-            Feel free to reach out for collaboration or projects!
+     
+          <div class="contact-info-container1">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon1 contact-icon1"
+            />
+            <p1><a href="https://www.linkedin.com/in/jaskaran-khosa/">LinkedIn</a></p1>
+             
+            <img
+            src="./assets/github.png"
+            alt="Github icon"
+            class="icon1 contact-icon1"
+          />
+          <p1><a href="https://github.com/khosa76">Github</a></p1>
+            
           </div>
+        
 
-          <p>Email: jaskarnkhosa6@gmail.com</p>
-          <p>Phone: +91 9501412976</p>
+         
+        
+    
+      </div>
 
-          <!-- LinkedIn: -->
-          <a href="https://www.linkedin.com/in/jaskaran-khosa/"
-            ><i
-              class="fab fa-linkedin"
-              style="font-size: 5vmin; color: rgb(64, 112, 244)"
-              >&nbsp;</i
-            ></a
-          >
-
-          <!-- GitHub: -->
-
-          <a href="https://github.com/khosa76">
-            <i
-              class="fab fa-github"
-              style="font-size: 5vmin; color: rgb(64, 112, 244)"
-            ></i>
-          </a>
-
-          <!-- <div class="button">
-            <button>Let's Chat</button>
-          </div> -->
-        </div>
+      
+      
       </div>
     </section>
+
+
+
+    <!-- Footer Section Test End -->
+
+
+
+
 
     <!-- Footer Section Start -->
     <footer>
@@ -357,7 +393,8 @@
         >
       </div>
     </footer>
-
-    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d05e321527.js" crossorigin="anonymous"></script>
+    <script src="portfolioscript.js"></script>
+    <script src="portfolioscrip1.js"></script>
   </body>
 </html>

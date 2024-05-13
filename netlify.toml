@@ -1,4 +1,0 @@
-[build]
-  base = "crypto-tracker"
-  publish = "build"
-  command = "npm run build"
