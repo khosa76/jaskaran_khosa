@@ -1,400 +1,280 @@
 <!DOCTYPE html>
-
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Jaskaran Khosa</title>
-    <link rel="stylesheet" href="portfoliostyle.css" />
-    <link rel="stylesheet" href="portfoliostyle1.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="stylesheet" href="all.css" />
-    <script src="https://kit.fontawesome.com/d05e321527.js" crossorigin="anonymous"></script>
-    <!-- Fontawesome CDN Link -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to my Portfolio</title>
+    <!--Icons-->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- linking stylesheet -->
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
+  <div class="preloader">
+    <div class="counter">0</div>
+  </div>
   <body>
-    <!-- Move to up button -->
-    
-    <!-- navgaition menu -->
-    <nav>
-      <div class="navbar">
-        <div class="logo"><a href="#">Portfolio.</a></div>
-        <ul class="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about1">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects1">Projects</a></li>
-          <li><a href="#contact1">Contact</a></li>
-          <div class="cancel-btn">
-            <i class="fas fa-times"></i>
-          </div>
-        </ul>
-        <div class="media-icons">
-          <a href="https://www.facebook.com/jaskarn.khosa6"
-            >
-            <i class="fab fa-facebook-f"></i>
-
-            <!-- <div class="fab details-container-header">
-              <img
-                src="./assets/facebook.png"
-                alt="facebook icon"
-                class="fab iconheader"
-              /> -->
-
-
-          </a>
-
-
-
-
-
-            
-          <a href="https://www.linkedin.com/in/jaskaran-khosa/"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-
-
-          <a href="https://www.linkedin.com/in/jaskaran-khosa/">
-
-            <!-- <div class="fab details-container-header">
-              <img
-                src="./assets/linkedin.png"
-                alt="linkedin icon"
-                class="fab iconheader"
-              /> -->
-
-          </a>
-
-
-          <a href="https://www.instagram.com/jaskaran_khosa_">
-            <i class="fab fa-instagram"></i>
-            <!-- <div class="fab details-container-header">
-              <img
-                src="./assets/instagram.png"
-                alt="instagram icon"
-                class="fab iconheader"
-              /> -->
-          </a>
+    <!-- <nav>
+        <div class="container nav__container">
+            <a href="index.html" class="Synapse-logo"><h6></h6></a>
+            <ul class="nav__menu">
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./departments.html">Articles</a></li>
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="./Senate.html">Senate</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
         </div>
-      </div>
-      <div class="menu-btn">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </nav>
+    </nav> -->
 
-    <!-- Home Section Start -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <div class="text">
-          <div class="text-one">Hello,</div>
-          <div class="text-two">I'm Jaskaran Khosa</div>
-          <div class="text-three">Web Developer</div>
-          <!-- <div class="text-four">From Punjab</div> -->
-        </div>
-        <!-- <div class="button">
-          <button>Hire Me</button>
-        </div> -->
-
-
-        <div class="button">
-          <button onclick="openFileInNewWindow('images/cv.pdf');">Download CV</button>
-      </div>
-      
-      <script>
-      function openFileInNewWindow(fileUrl) {
-          window.open(fileUrl, '_blank');
-      }
-      </script>
-      </div>
-    </section>
-
-
-
-
-<!-- Second type of About section test -->
-
-<section id="about1" class="section76 about">
-  <p class="section__text__p1 content">Get To Know More</p>
-  <h1 class="title1"><span>About Me</span></h1>
-  <div class="section-container1 about-details">
-    <div class="section__pic-container1 left">
+    <main id="splash">
+      <div class="vignette"></div>
       <img
-        src="./images/about3.png"
-        alt="Profile picture"
-        class="about-pic1"
+        src="images/background(1).png"
+        data-rotation="0"
+        data-speedx="0.3"
+        data-speedy="0.38"
+        data-speedz="0"
+        data-rotation="0"
+        data-distance="-200"
+        class="parallax bg-img"
       />
-    </div>
-    <div class="about-details-container1 right">
-      <div class="about-containers1">
-        <div class="details-container1">
-          <img
-            src="./assets/experience.png"
-            alt="Experience icon"
-            class="icon1"
-          />
-          <h3>Experience</h3>
-          <p>10+ Projects <br />Fullstack Development</p>
-        </div>
-        <div class="details-container1">
-          <img
-            src="./assets/education.png"
-            alt="Education icon"
-            class="icon1"
-          />
-          <h3>Education</h3>
-          <p>M.C.A Bachelors Degree<br />M.B.A Masters Degree</p>
-        </div>
+      <img
+        src="images/fog_7.png"
+        data-rotation="0"
+        data-speedx="0.27"
+        data-speedy="0.32"
+        data-speedz="0"
+        data-rotation="0"
+        data-distance="850"
+        class="parallax fog-7"
+      />
+      <img
+        src="images/mountain_10.png"
+        data-rotation="0"
+        data-speedx="0.195"
+        data-speedy="0.305"
+        data-speedz="0"
+        data-rotation="0"
+        data-distance="1100"
+        class="parallax mountain-10"
+      />
+      <img
+        src="images/fog_6.png"
+        data-rotation="0"
+        data-speedx="0.25"
+        data-speedy="0.28"
+        data-speedz="0"
+        data-rotation="0"
+        data-distance="1400"
+        class="parallax fog-6"
+      />
+      <img
+        src="images/mountain_9.png"
+        data-rotation="0.02"
+        data-speedx="0.125"
+        data-speedy="0.155"
+        data-speedz="0.15"
+        data-rotation="0.02"
+        data-distance="1700"
+        class="parallax mountain-9"
+      />
+      <img
+        src="images/mountain_8.png"
+        data-rotation="0.02"
+        data-speedx="0.1"
+        data-speedy="0.11"
+        data-speedz="0"
+        data-rotation="0.02"
+        data-distance="1600"
+        class="parallax mountain-8"
+      />
+      <img
+        src="images/fog_5.png"
+        data-rotation="0"
+        data-speedx="0.16"
+        data-speedy="0.105"
+        data-speedz="0"
+        data-rotation="0"
+        data-distance="1800"
+        class="parallax fog-5"
+      />
+      <img
+        src="images/mountain_7.png"
+        data-rotation="0.09"
+        data-speedx="0.1"
+        data-speedy="0.1"
+        data-speedz="0"
+        data-rotation="0.09"
+        data-distance="1900"
+        class="parallax mountain-7"
+      />
+      <div
+        class="text parallax"
+        sdata-rotation="0.11"
+        data-speedx="0.07"
+        data-speedy="0.07"
+        data-rotation="0.11"
+        data-speedz="0"
+      >
+        <h2>Jaskaran</h2>
+        <br />
+        <h1>Khosa</h1>
       </div>
-      <div class="text-container1">
-        <p>
-          Hello, I'm Jaskaran Singh Khosa, a passionate web developer with a
-              focus on building innovative and user-friendly web applications. I
-              completed my Bachelor's in Computer Applications (BCA) from
-              Chandigarh University and I'm currently pursuing my MBA from the
-              same institution.
-        </p>
-      </div>
-    </div>
-  </div>
-  
-</section>
+      <img
+        src="images/mountain_6.png"
+        data-rotation="0.12"
+        data-speedx="0.065"
+        data-speedy="0.05"
+        data-speedz="0.05"
+        data-rotation="0.12"
+        data-distance="2300"
+        class="parallax mountain-6"
+      />
+      <img
+        src="images/fog_4.png"
+        data-speedx="0.135"
+        data-speedy="0.38"
+        data-speedz="0"
+        data-rotation="0.0"
+        data-distance="2400"
+        class="parallax fog-4"
+      />
+      <img
+        src="images/mountain_5.png"
+        data-rotation="0.1"
+        data-speedx="0.08"
+        data-speedy="0.03"
+        data-speedz="0.1"
+        data-rotation="0.05"
+        data-distance="2600"
+        class="parallax mountain-5"
+      />
+      <img
+        src="images/fog_3.png"
+        data-rotation="0"
+        data-speedx="0.11"
+        data-speedy="0.018"
+        data-speedz="0"
+        data-rotation="0"
+        data-distance="2700"
+        class="parallax fog-3"
+      />
+      <img
+        src="images/mountain_4.png"
+        data-rotation="0.14"
+        data-speedx="0.059"
+        data-speedy="0.024"
+        data-speedz="0.35"
+        data-rotation="0.04"
+        data-distance="2800"
+        class="parallax mountain-4"
+      />
+      <img
+        src="images/mountain_3.png"
+        data-rotation="0.05"
+        data-speedx="0.04"
+        data-speedy="0.018"
+        data-speedz="0.32"
+        data-rotation="0.05"
+        data-distance="3000"
+        class="parallax mountain-3"
+      />
+      <img
+        src="images/fog_2.png"
+        data-rotation="0"
+        data-speedx="0.15"
+        data-speedy="0.0115"
+        data-speedz="0"
+        data-rotation="0"
+        data-distance="3200"
+        class="parallax fog-2"
+      />
+      <img
+        src="images/mountain_2.png"
+        data-rotation="0.15"
+        data-speedx="0.0235"
+        data-speedy="0.013"
+        data-speedz="0.42"
+        data-rotation="0.15"
+        data-distance="3400"
+        class="parallax mountain-2"
+      />
+      <img
+        src="images/mountain_1.png"
+        data-rotation="0.2"
+        data-speedx="0.027"
+        data-speedy="0.018"
+        data-speedz="0.53"
+        data-rotation="0"
+        data-distance="3800"
+        class="parallax mountain-1"
+      />
+      <img src="images/sun_rays.png" class="sun-rays" data-distance="3900" />
+      <img
+        src="images/black_shadow.png"
+        class="black-shadow"
+        data-distance="4000"
+      />
+      <img
+        src="images/fog_1.png"
+        data-speedx="0.12"
+        data-speedy="0.01"
+        data-speedz="0"
+        data-rotation="0.2"
+        data-distance="4200"
+        class="parallax fog-1"
+      />
+    </main>
 
-<!-- Second type of About section test ends here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+      function counter() {
+        var count = setInterval(function () {
+          var c = parseInt($(".counter").text());
+          $(".counter").text((++c).toString());
+          if (c == 100) {
+            clearInterval(count);
+            $(".counter").addClass("mide");
+            $(".preloader").addClass("active");
+          }
+        }, 10);
+      }
+      counter();
+    </script>
+    <script src="app.js"></script>
+    <script src="main.js"></script>
 
+    <script>
+      function redirectToMainPage() {
+        var destination = "portfolio.html";
+        // window.location.href = "portfolio.html";
+        $("body").fadeOut(1000, function () {
+          window.location.replace(destination);
+        });
+      }
 
+      setTimeout(redirectToMainPage, 11000);
 
-
-    <section class="services" id="skills">
-      <div class="content">
-        <div class="title"><span>My Skills</span></div>
-        <div class="boxes">
-          <div class="box">
-            <img width="100vmin" height="100vmin" src="images/react.png" />
-          </div>
-          <div class="box">
-            <img width="200vmin" height="100vmin" src="images/node.png" />
-          </div>
-          <div class="box">
-            <img width="100vmin" height="100vmin" src="images/js.png" />
-          </div>
-          <div class="box">
-            <img width="200vmin" height="80vmin" src="images/tailwind.png" />
-          </div>
-          <div class="box">
-            <img width="120vmin" height="100vmin" src="images/mongo.png" />
-          </div>
-          <div class="box">
-            <img width="100vmin" height="100vmin" src="images/git.png" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="skills" id="experience">
-      <div class="content">
-        <div class="title"><span>My Experiences</span></div>
-
-        <div class="text">
-          <div class="topic1">
-            <div class="experience">
-              <h4>Institutional Training in Cloud Computing,</h4>
-
-              <h6>Chandigarh University</h6>
-              <br />
-              <ul>
-                <li>
-                  Deploying and managing virtual machines on cloud platforms
-                </li>
-                <li>
-                  Configuring cloud services, implementing security measures,
-                  and automating infrastructure tasks
-                </li>
-              </ul>
-            </div>
-            <br /><br />
-
-            <div class="experience">
-              <h4>Henceforth Solutions Pvt.Solutions,</h4>
-              <h6>Mohali</h6>
-              <br />
-              <ul>
-                <li>
-                  Gained in-depth knowledge and practical experience in
-                  React.js, a popular JavaScript library for building user
-                  interfaces.
-                </li>
-                <li>
-                  Developed and deployed several React applications,
-                  demonstrating proficiency in component-based architecture,
-                  state management,practices in front-end development.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-<!-- My Projects secrtion start here text-->
- <div class="bctry" id="projects1">
-<section1 id="projects1 about1" class="section76 about content services">
- 
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title1">Projects</h1>
-      <div class="experience-details-container1 about-details">
-        <div class="about-containers1">
-          <div class="details-container1 color-container1">
-            <div class="article-container1">
-              <img
-                src="./assets/project14.png"
-                alt="Project 1"
-                class="project-img1"
-              />
-            </div>
-            <h2 class="experience-sub-title1 project-title1">Crypto tracker</h2>
-            <div class="btn-container1">
-              <button
-                class="btn1 btn-color-2 project-btn1"
-                onclick="location.href='https://github.com/khosa76/crypto-tracker'"
-              >
-                Github
-              </button>
-              <button
-                class="btn1 btn-color-2 project-btn1"
-                onclick="location.href='https://crypto-tracker-khosa.netlify.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container1 color-container1">
-            <div class="article-container1">
-              <img
-                src="./assets/project15.png"
-                alt="Project 2"
-                class="project-img1"
-              />
-            </div>
-            <h2 class="experience-sub-title1 project-title1">Spotify using React</h2>
-            <div class="btn-container1">
-              <button
-                class="btn1 btn-color-2 project-btn1"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn1 btn-color-2 project-btn1"
-                onclick="location.href='https://open.spotify.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container1 color-container1">
-            <div class="article-container1">
-              <img
-                src="./assets/project16.png"
-                alt="Project 3"
-                class="project-img1"
-              />
-            </div>
-            <h2 class="experience-sub-title1 project-title1">AI-TicTacToe</h2>
-            <div class="btn-container1">
-              <button
-                class="btn1 btn-color-2 project-btn1"
-                onclick="location.href='https://github.com/khosa76/Tic-Tac-Toe'"
-              >
-                Github
-              </button>
-              <button
-                class="btn1 btn-color-2 project-btn1"
-                onclick="location.href='https://tic-tac-toe-khosa.netlify.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-    
-    </div>
-    </section1>
-  </div>
-
-<!-- My Projects secrtion end here text-->
-
-
-    <!-- Footer Section Test start -->
-
-
-    <section id="contact1" class="section77">
-      <p1 class="section__text__p1">Get in Touch</p1>
-      <h1 class="title1">Contact Me</h1>
-      <div class="contact-info-upper-container1">
-        <div class="contact-info-container1">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon1 contact-icon1 email-icon1"
-          />
-          <p1><a href="mailto:jaskarnkhosa6@gmail.com">Mail&nbsp; &nbsp;</a></p1>
-        </div>
-     
-          <div class="contact-info-container1">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon1 contact-icon1"
-            />
-            <p1><a href="https://www.linkedin.com/in/jaskaran-khosa/">LinkedIn</a></p1>
-             
-            <img
-            src="./assets/github.png"
-            alt="Github icon"
-            class="icon1 contact-icon1"
-          />
-          <p1><a href="https://github.com/khosa76">Github</a></p1>
-            
-          </div>
-        
-
-         
-        
-    
-      </div>
-
-      
-      
-      </div>
-    </section>
-
-
-
-    <!-- Footer Section Test End -->
-
-
-
-
-
-    <!-- Footer Section Start -->
-    <footer>
-      <div class="text">
-        <span
-          >Created By <a href="#">Khosa &#128293;</a> | &#169; 2021 All Rights
-          Reserved</span
-        >
-      </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/d05e321527.js" crossorigin="anonymous"></script>
-    <script src="portfolioscript.js"></script>
-    <script src="portfolioscrip1.js"></script>
+      window.addEventListener("click", function () {
+        var destination = "portfolio.html";
+        $("body").fadeOut(1000, function () {
+          window.location.replace(destination);
+        });
+      });
+    </script>
   </body>
 </html>
