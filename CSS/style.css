@@ -96,47 +96,6 @@ main {
   pointer-events: none;
 }
 
-/*.loader{
-    align-content: center;
-    border: 0 solid transparent;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: calc(50vh - 75px);
-    left: calc(50vw - 75px);
-}
-.loader::before, .loader::after{
-    align-items: center;
-    content: '';
-    border: 1rem solid #ff5733;
-    border-radius: 50%;
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: loader 2s linear infinite;
-    opacity: 0;
-}
-
-.loader::before{
-    animation-delay: .5s;
-}
-@keyframes loader {
-    0%{
-        transform: scale(0);
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: scale(1);
-    }
-}*/
-
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.7;
@@ -186,92 +145,6 @@ img {
   object-fit: cover;
 }
 
-.btn {
-  display: inline-block;
-  background: var(--color-black);
-  color: var(--color-black);
-  padding: 1rem 2rem;
-  border: 1px solid transparent;
-  font-weight: 500;
-  transition: var(--transition);
-}
-
-.btn:hover {
-  background: transparent;
-  color: var(--color-white);
-  border-color: var(--color-white);
-}
-
-.btn-primary {
-  background: var(--color-danger);
-  color: var(--color-white);
-}
-
-/*========================= Navigation Bar =========================*/
-nav {
-  background: transparent;
-  width: 100vw;
-  height: 5rem;
-  position: absolute;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  top: 0;
-  padding: 0.9rem 0;
-  z-index: 9999;
-}
-nav .nav__container {
-  height: 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav button {
-  display: none;
-}
-
-nav ul button {
-  background: transparent;
-  background: var(--color-success);
-  color: var(--color-danger-variant);
-  font-size: 0.9rem;
-  font-weight: 600;
-  width: fit-content;
-  height: fit-content;
-  padding: 0.6rem 1rem;
-  border: 1px solid var(--color-success);
-  border-radius: 5px;
-}
-
-nav ul button:hover {
-  color: var(--color-warning);
-  border-color: var(--color-danger-variant);
-}
-
-nav ul button:active {
-  box-shadow: 0 0 20px 5px #4b665db7 inset;
-}
-
-.nav__menu {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-}
-
-.nav__menu a {
-  font-size: 0.9rem;
-  color: var(--color-black);
-  font-size: 1.25rem;
-  transition: var(--transition);
-}
-nav ul button a {
-  all: unset;
-}
-
-.nav__menu a:hover {
-  color: var(--color-bg2);
-}
-/*========================= Footer =========================*/
-
 .parallax {
   pointer-events: none;
   transition: 0.45s cubic-bezier(0.2, 0.49, 0.32, 0.99);
@@ -311,16 +184,6 @@ nav ul button a {
   left: 65.97%;
   transform: translate(-50%, -50%);
 }
-.fog-2 {
-  pointer-events: none;
-  position: absolute;
-  transition: 0.45s cubic-bezier(0.2, 0.49, 0.32, 0.99);
-  z-index: 4;
-  top: 61.72%;
-  left: 50.48%;
-  width: 127.29%;
-  transform: translate(-50%, -50%);
-}
 
 .mountain-9 {
   pointer-events: none;
@@ -342,17 +205,6 @@ nav ul button a {
   top: 61.85%;
   width: 54.58%;
   left: 35.98%;
-  transform: translate(-50%, -50%);
-}
-
-.fog-3 {
-  pointer-events: none;
-  position: absolute;
-  transition: 0.45s cubic-bezier(0.2, 0.49, 0.32, 0.99);
-  z-index: 7;
-  top: 71.11%;
-  left: 52.01%;
-  width: 31.18%;
   transform: translate(-50%, -50%);
 }
 
@@ -402,17 +254,6 @@ nav ul button a {
   left: 90.97%;
   transform: translate(-50%, -50%);
 }
-.fog-4 {
-  pointer-events: none;
-  transition: 0.45s cubic-bezier(0.2, 0.49, 0.32, 0.99);
-  position: absolute;
-  z-index: 11;
-  top: 79.87%;
-  left: 45.56%;
-  width: 37.3%;
-  transform: translate(-50%, -50%);
-  opacity: 0.95;
-}
 
 .mountain-5 {
   pointer-events: none;
@@ -421,19 +262,7 @@ nav ul button a {
   z-index: 12;
   top: 83.2%;
   width: 40.48%;
-  left: 59.02%;
-  transform: translate(-50%, -50%);
-}
-
-.fog-5 {
-  pointer-events: none;
-  position: absolute;
-  z-index: 13;
-  transition: 0.45s cubic-bezier(0.2, 0.49, 0.32, 0.99);
-  top: 68.39%;
-  left: 48.06%;
-  width: 99.65%;
-  opacity: 0.9;
+  left: 56.02%;
   transform: translate(-50%, -50%);
 }
 
@@ -460,38 +289,14 @@ nav ul button a {
   transform-origin: center !important;
 }
 
-/* 
-.mountain-9 {
-  pointer-events: none;
-  position: absolute;
-  transition: 0.45s cubic-bezier(0.2, 0.49, 0.32, 0.99);
-  z-index: 5;
-  top: 64.69%;
-  width: 26.15%;
-  left: 18.27%;
-  transform: translate(-50%, -50%) scaleX(-1) !important;
-  transform-origin: center !important; 
-} */
-
-.fog-6 {
-  pointer-events: none;
-  position: absolute;
-  transition: 0.45s cubic-bezier(0.2, 0.49, 0.32, 0.99);
-  z-index: 16;
-  top: 71.85%;
-  left: 47.92%;
-  width: 98.47%;
-  opacity: 0.4;
-  transform: translate(-50%, -50%);
-}
 .mountain-2 {
   pointer-events: none;
   position: absolute;
   transition: 0.45s cubic-bezier(0.2, 0.49, 0.32, 0.99);
   z-index: 17;
-  top: 73.2%;
-  left: 78.61%;
-  width: 43.4%;
+  top: 80.2%;
+  left: 74.61%;
+  width: 48.4%;
   transform: translate(-50%, -50%);
 }
 .mountain-1 {
@@ -657,9 +462,7 @@ nav ul button a {
     font-size: 4.1rem;
     line-height: 1.1;
   }
-  .nav__container {
-    padding: 0 1rem;
-  }
+
   .Synapse-logo {
     width: 75px;
   }
@@ -676,18 +479,12 @@ nav ul button a {
     width: initial;
     height: 311.104%;
   }
-  .fog-7 {
-    width: initial;
-    height: 211.2%;
-  }
+
   .mountain-10 {
     width: initial;
     height: 96.656%;
   }
-  .fog-2 {
-    width: initial;
-    height: 203.664%;
-  }
+
   .mountain-9 {
     width: initial;
     height: 51.44%;
@@ -696,10 +493,7 @@ nav ul button a {
     width: initial;
     height: 87.328%;
   }
-  .fog-3 {
-    width: initial;
-    height: 49.888%;
-  }
+
   .mountain-7 {
     width: initial;
     height: 57.216%;
@@ -708,18 +502,12 @@ nav ul button a {
     width: initial;
     height: 42.608%;
   }
-  .fog-4 {
-    width: initial;
-    height: 59.68%;
-  }
+
   .mountain-5 {
     width: initial;
     height: 64.768%;
   }
-  .fog-5 {
-    width: initial;
-    height: 159.44%;
-  }
+
   .mountain-4 {
     width: initial;
     height: 70.664%;
@@ -730,10 +518,7 @@ nav ul button a {
     height: 70.544%;
     bottom: 0;
   }
-  .fog-6 {
-    width: initial;
-    height: 157.552%;
-  }
+
   .mountain-2 {
     width: initial;
     height: 69.44%;
@@ -786,16 +571,11 @@ nav ul button a {
     width: initial;
     height: 311.104%;
   }
-  .fog-7 {
-    display: none;
-  }
+
   .mountain-10 {
     display: none;
   }
-  .fog-2 {
-    width: initial;
-    height: 203.664%;
-  }
+
   .mountain-9 {
     display: none;
   }
@@ -834,10 +614,7 @@ nav ul button a {
     height: 70.544%;
     bottom: 0;
   }
-  .fog-6 {
-    width: initial;
-    height: 157.552%;
-  }
+
   .mountain-2 {
     display: none;
   }
@@ -891,49 +668,6 @@ nav ul button a {
     font-size: 1.2rem;
   }
 
-  /*========================NAVBAR Responsive==========================*/
-  nav button {
-    display: inline-block;
-    background: transparent;
-    font-size: 1.8rem;
-    color: var(--color-white);
-    cursor: pointer;
-  }
-  nav button#close-menu-btn {
-    display: none;
-  }
-  .nav__menu {
-    position: fixed;
-    top: 5rem;
-    right: 5%;
-    height: fit-content;
-    width: 18rem;
-    flex-direction: column;
-    display: none;
-    gap: 0;
-  }
-
-  .nav__menu li {
-    width: 100%;
-    height: 5.8rem;
-    animation: animateNavItems 400ms linear forwards;
-    transform-origin: top right;
-    opacity: 0;
-  }
-
-  .nav__menu li:nth-child(2) {
-    animation-delay: 200ms;
-  }
-  .nav__menu li:nth-child(3) {
-    animation-delay: 300ms;
-  }
-  .nav__menu li:nth-child(4) {
-    animation-delay: 400ms;
-  }
-  .nav__menu li:nth-child(5) {
-    animation-delay: 500ms;
-  }
-
   @keyframes animateNavItems {
     0% {
       transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
@@ -942,19 +676,6 @@ nav ul button a {
       transform: rotateZ(0deg) rotateX(0) scale(1);
       opacity: 1;
     }
-  }
-  .nav__menu li a {
-    background: var(--color-primary);
-    box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100%;
-    display: grid;
-    place-items: center;
-  }
-
-  .nav__menu li a:hover {
-    background-color: var(--color-bg2);
-    color: var(--color-white);
   }
 }
 
