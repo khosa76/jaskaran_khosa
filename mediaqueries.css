@@ -48,11 +48,10 @@
 }
 
 @media screen and (max-width: 1000) {
-#about1{
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
+  #about1 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -75,8 +74,7 @@
   .about-details .right {
     width: 90%;
     margin-bottom: 40px;
-}
-}
+  }
 
   .about-containers1,
   .contact-info-upper-container1,
@@ -117,12 +115,9 @@
   }
 }
 
-
 @media screen and (max-width: 500px) {
-
-#about1{
+  #about1 {
     padding-left: 1rem;
     padding-right: 1rem;
-}
-
+  }
 }
