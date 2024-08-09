@@ -153,7 +153,6 @@
         data-distance="3800"
         class="parallax mountain-1"
       />
-      <img src="images/sun_rays.webp" class="sun-rays" data-distance="3900" />
 
       <img
         src="images/fog_11.png"
@@ -171,7 +170,6 @@
 
     <script type="text/javascript">
       function counter() {
-        preloadImages();
         var count = setInterval(function () {
           var c = parseInt($(".counter").text());
           $(".counter").text((++c).toString());
@@ -180,7 +178,7 @@
             $(".counter").addClass("mide");
             $(".preloader").addClass("active");
           }
-        }, 10);
+        }, 50);
       }
       preloadImages();
       counter();
@@ -193,8 +191,6 @@
             window.location.replace(destination);
           });
         }
-
-        // make it to mobile only timeout
 
         // setTimeout(redirectToMainPage, 11000);
 
