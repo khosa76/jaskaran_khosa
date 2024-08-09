@@ -19,30 +19,18 @@
     />
     <!-- linking stylesheet -->
     <link rel="stylesheet" href="./CSS/style.css" />
+
+    <link rel="preload" href="images/background(1).webp" as="image" />
   </head>
   <div class="preloader">
     <div class="counter">0</div>
   </div>
   <body>
-    <!-- <nav>
-        <div class="container nav__container">
-            <a href="index.html" class="Synapse-logo"><h6></h6></a>
-            <ul class="nav__menu">
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./departments.html">Articles</a></li>
-                <li><a href="./events.html">Events</a></li>
-                <li><a href="./Senate.html">Senate</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
-        </div>
-    </nav> -->
-
     <main id="splash">
       <div class="vignette"></div>
       <img
-        src="images/background(1).png"
+        rel="preload"
+        src="images/background(1).webp"
         data-rotation="0"
         data-speedx="0.3"
         data-speedy="0.38"
@@ -51,18 +39,9 @@
         data-distance="-200"
         class="parallax bg-img"
       />
+
       <img
-        src="images/fog_7.png"
-        data-rotation="0"
-        data-speedx="0.27"
-        data-speedy="0.32"
-        data-speedz="0"
-        data-rotation="0"
-        data-distance="850"
-        class="parallax fog-7"
-      />
-      <img
-        src="images/mountain_10.png"
+        src="images/mountain_10.webp"
         data-rotation="0"
         data-speedx="0.195"
         data-speedy="0.305"
@@ -71,18 +50,9 @@
         data-distance="1100"
         class="parallax mountain-10"
       />
+
       <img
-        src="images/fog_6.png"
-        data-rotation="0"
-        data-speedx="0.25"
-        data-speedy="0.28"
-        data-speedz="0"
-        data-rotation="0"
-        data-distance="1400"
-        class="parallax fog-6"
-      />
-      <img
-        src="images/mountain_9.png"
+        src="images/mountain_6.webp"
         data-rotation="0.02"
         data-speedx="0.125"
         data-speedy="0.155"
@@ -91,8 +61,9 @@
         data-distance="1700"
         class="parallax mountain-9"
       />
+
       <img
-        src="images/mountain_8.png"
+        src="images/mountain_8.webp"
         data-rotation="0.02"
         data-speedx="0.1"
         data-speedy="0.11"
@@ -101,18 +72,9 @@
         data-distance="1600"
         class="parallax mountain-8"
       />
+
       <img
-        src="images/fog_5.png"
-        data-rotation="0"
-        data-speedx="0.16"
-        data-speedy="0.105"
-        data-speedz="0"
-        data-rotation="0"
-        data-distance="1800"
-        class="parallax fog-5"
-      />
-      <img
-        src="images/mountain_7.png"
+        src="images/mountain_7.webp"
         data-rotation="0.09"
         data-speedx="0.1"
         data-speedy="0.1"
@@ -121,6 +83,16 @@
         data-distance="1900"
         class="parallax mountain-7"
       />
+      <img
+        src="images/fog_11.png"
+        data-speedx="0.12"
+        data-speedy="0.01"
+        data-speedz="0"
+        data-rotation="0.2"
+        data-distance="4200"
+        class="parallax fog-1"
+      />
+
       <div
         class="text parallax"
         sdata-rotation="0.11"
@@ -134,7 +106,7 @@
         <h1>Khosa</h1>
       </div>
       <img
-        src="images/mountain_6.png"
+        src="images/mountain_6.webp"
         data-rotation="0.12"
         data-speedx="0.065"
         data-speedy="0.05"
@@ -143,17 +115,9 @@
         data-distance="2300"
         class="parallax mountain-6"
       />
+
       <img
-        src="images/fog_4.png"
-        data-speedx="0.135"
-        data-speedy="0.38"
-        data-speedz="0"
-        data-rotation="0.0"
-        data-distance="2400"
-        class="parallax fog-4"
-      />
-      <img
-        src="images/mountain_5.png"
+        src="images/mountain_5.webp"
         data-rotation="0.1"
         data-speedx="0.08"
         data-speedy="0.03"
@@ -162,18 +126,9 @@
         data-distance="2600"
         class="parallax mountain-5"
       />
+
       <img
-        src="images/fog_3.png"
-        data-rotation="0"
-        data-speedx="0.11"
-        data-speedy="0.018"
-        data-speedz="0"
-        data-rotation="0"
-        data-distance="2700"
-        class="parallax fog-3"
-      />
-      <img
-        src="images/mountain_4.png"
+        src="images/mountain_4.webp"
         data-rotation="0.14"
         data-speedx="0.059"
         data-speedy="0.024"
@@ -182,8 +137,9 @@
         data-distance="2800"
         class="parallax mountain-4"
       />
+
       <img
-        src="images/mountain_3.png"
+        src="images/mountain_1.webp"
         data-rotation="0.05"
         data-speedx="0.04"
         data-speedy="0.018"
@@ -203,7 +159,7 @@
         class="parallax fog-2"
       />
       <img
-        src="images/mountain_2.png"
+        src="images/mountain_2.webp"
         data-rotation="0.15"
         data-speedx="0.0235"
         data-speedy="0.013"
@@ -213,7 +169,7 @@
         class="parallax mountain-2"
       />
       <img
-        src="images/mountain_1.png"
+        src="images/mountain_1.webp"
         data-rotation="0.2"
         data-speedx="0.027"
         data-speedy="0.018"
@@ -222,20 +178,11 @@
         data-distance="3800"
         class="parallax mountain-1"
       />
-      <img src="images/sun_rays.png" class="sun-rays" data-distance="3900" />
+      <img src="images/sun_rays.webp" class="sun-rays" data-distance="3900" />
       <img
-        src="images/black_shadow.png"
+        src="images/black_shadow.webp"
         class="black-shadow"
         data-distance="4000"
-      />
-      <img
-        src="images/fog_1.png"
-        data-speedx="0.12"
-        data-speedy="0.01"
-        data-speedz="0"
-        data-rotation="0.2"
-        data-distance="4200"
-        class="parallax fog-1"
       />
     </main>
 
@@ -243,6 +190,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript">
       function counter() {
+        preloadImages();
         var count = setInterval(function () {
           var c = parseInt($(".counter").text());
           $(".counter").text((++c).toString());
@@ -251,30 +199,60 @@
             $(".counter").addClass("mide");
             $(".preloader").addClass("active");
           }
-        }, 37);
+        }, 10);
       }
+      preloadImages();
       counter();
+
+      // Preload all images
+      function preloadImages() {
+        const images = [
+          "images/background(1).webp",
+          "images/mountain_10.webp",
+          "images/mountain_8.webp",
+          "images/mountain_7.webp",
+          "images/mountain_6.webp",
+          "images/mountain_5.webp",
+          "images/mountain_4.webp",
+          "images/mountain_2.webp",
+          "images/mountain_1.webp",
+          "images/sun_rays.webp",
+          "images/black_shadow.webp",
+          "images/fog_11.png",
+        ];
+
+        images.forEach((src) => {
+          const img = new Image();
+          img.src = src;
+        });
+
+        function redirectToMainPage() {
+          var destination = "portfolio.html";
+          $("body").fadeOut(1000, function () {
+            window.location.replace(destination);
+          });
+        }
+
+        // setTimeout(redirectToMainPage, 11000);
+
+        function isMobileDevice() {
+          return window.matchMedia("(max-width: 768px)").matches;
+        }
+
+        // Call setTimeout only if on a mobile device
+        if (isMobileDevice()) {
+          setTimeout(redirectToMainPage, 11000);
+        }
+
+        window.addEventListener("click", function () {
+          var destination = "portfolio.html";
+          $("body").fadeOut(1000, function () {
+            window.location.replace(destination);
+          });
+        });
+      }
     </script>
     <script src="app.js"></script>
     <script src="main.js"></script>
-
-    <script>
-      function redirectToMainPage() {
-        var destination = "portfolio.html";
-        // window.location.href = "portfolio.html";
-        $("body").fadeOut(1000, function () {
-          window.location.replace(destination);
-        });
-      }
-
-      setTimeout(redirectToMainPage, 20000);
-
-      window.addEventListener("click", function () {
-        var destination = "portfolio.html";
-        $("body").fadeOut(1000, function () {
-          window.location.replace(destination);
-        });
-      });
-    </script>
   </body>
 </html>
